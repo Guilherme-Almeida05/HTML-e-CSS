@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+        }
+
+        .item{
+            background-color: purple;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{
+            width: fit-content; /* Dessa forma poderemos limitar os elemtos de fundo que aparecem na linha */
+        }
+
+        .min-content .item{
+            width: min-content; /* Com essa função a largura que ficara no bloco serà a da maior palavra */
+        }
+
+        .max-content .item{
+            width: max-content; /* Maior largura possível */
+        }
+
+    </style>
+
+</head>
+
+    <body>
+        <div class="container fit-content">
+            <div class="item"> lorem </div>
+            <div class="item"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, obcaecati.</div>
+            <div class="item"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, libero labore. Obcaecati quo neque, sunt blanditiis optio ex fugiat aperiam, eaque dignissimos nesciunt a velit.</div>
+            <div class="item"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor alias culpa, adipisci vero est eveniet asperiores voluptas mollitia suscipit aut esse aliquid at dignissimos corrupti, natus odio aspernatur exercitationem iusto. Eaque itaque et sed fugiat soluta nobis explicabo temporibus, non officia, ullam cum libero sint laborum! Eaque enim eligendi cum doloribus quasi architecto ducimus, necessitatibus, earum veniam voluptatibus hic! Soluta iste laborum nemo aut doloremque non sapiente reprehenderit magnam hic sit nisi, cumque ea consequuntur.</div>
+        </div>
+
+        <div class="container min-content">
+            <div class="item"> lorem </div>
+            <div class="item"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, obcaecati.</div>
+            <div class="item"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, libero labore. Obcaecati quo neque, sunt blanditiis optio ex fugiat aperiam, eaque dignissimos nesciunt a velit.</div>
+            <div class="item"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor alias culpa, adipisci vero est eveniet asperiores voluptas mollitia suscipit aut esse aliquid at dignissimos corrupti, natus odio aspernatur exercitationem iusto. Eaque itaque et sed fugiat soluta nobis explicabo temporibus, non officia, ullam cum libero sint laborum! Eaque enim eligendi cum doloribus quasi architecto ducimus, necessitatibus, earum veniam voluptatibus hic! Soluta iste laborum nemo aut doloremque non sapiente reprehenderit magnam hic sit nisi, cumque ea consequuntur.</div>
+        </div>
+
+        <div class="container max-content">
+            <div class="item"> lorem </div>
+            <div class="item"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, obcaecati.</div>
+            <div class="item"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, libero labore. Obcaecati quo neque, sunt blanditiis optio ex fugiat aperiam, eaque dignissimos nesciunt a velit.</div>
+            <div class="item"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor alias culpa, adipisci vero est eveniet asperiores voluptas mollitia suscipit aut esse aliquid at dignissimos corrupti, natus odio aspernatur exercitationem iusto. Eaque itaque et sed fugiat soluta nobis explicabo temporibus, non officia, ullam cum libero sint laborum! Eaque enim eligendi cum doloribus quasi architecto ducimus, necessitatibus, earum veniam voluptatibus hic! Soluta iste laborum nemo aut doloremque non sapiente reprehenderit magnam hic sit nisi, cumque ea consequuntur.</div>
+        </div>
+    </body>
+
+</html>

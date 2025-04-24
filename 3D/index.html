@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .cena{
+            border: 2px solid #ccc;
+            width: 300px;
+            height: 300px;
+            aspect-ratio: 1;
+            margin: 90px;
+        }
+
+        .plano{
+            background-color: red;
+        }
+
+        #cena1{
+            perspective: 400px; /*Essencial para dar evidencia da tridimensionalidade*/
+        }
+
+        #cena1 .plano{
+            width: 200px;
+            margin: 50px;
+            height: 200px;
+            transform: rotateY(45deg);
+        }
+    </style>
+
+</head>
+
+    <body>
+        <div class="cena" id="cena1">
+            <div class="plano">plano</div>
+        </div>
+    </body>
+
+</html>

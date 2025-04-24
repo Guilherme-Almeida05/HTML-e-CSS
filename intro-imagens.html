@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> MEXENDO COM IMAGENS </title>
+
+<!-- TIPOS DE IMAGENS 
+        .jpg/.jpeg          .svg
+        .png            .webp
+        .gif            .avif
+        -->
+
+        <style> 
+
+        body{
+            background-color: rgb(255, 255, 255);
+            font-size: 22px;
+            font-family: sans-serif;
+            width: 700px;
+            margin: auto;
+
+            background-image: url(imagens/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position:  right bottom;
+        }
+        .img-logo{
+            width: 400px;
+        }
+        .img-html{
+            float: left;
+        }    
+        .img-css{
+            float: right;
+        }
+        p{
+            line-height: 1.5;
+            text-align: justify;
+        }
+        </style>
+</head>
+
+    <body>
+    
+        <h1> Trabalhando com imagens </h1>
+
+        <h2> Imagens vetoriais X BitMap</h2>
+
+        <img src="imagens/logo_ser-frontend-ico.png" class="img-logo" alt=" logotpio ser front-end ">
+        <br>
+        <img src="imagens/logo_ser-frontend-ico.svg" class="img-logo" alt=" logotpio ser front-end ">
+
+        <h2> Imagens transparentes </h2>
+
+        <img src="imagens/logo_ser-frontend-ico-transparente.gif" alt="">
+        <br>
+        <img src="imagens/logo_ser-frontend-ico-transparente.png" alt="">
+
+        <h2> imagem com animacao </h2>
+
+        <img src="imagens/walk.gif" alt="animacao mulher andando">
+
+        <h2> FLoat </h2> <!-- COM FLOAT PODEMOS FAZER O ELEMENTO FLUTUAR, FZND QUE O TEXTO O CONTORNE -->
+
+        <img src="imagens/html5.png" alt="logo html" class="img-html">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deleniti, consectetur ducimus sint sapiente soluta?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi recusandae labore. Laudantium, ratione corporis expedita magni rem culpa vitae explicabo delectus architecto commodi ex dignissimos quo repudiandae quis ab, soluta dolores consectetur nemo suscipit ea itaque odit. At quaerat minima facilis eveniet quae? Ut veritatis dignissimos sed sapiente odio. Nemo officiis accusantium fugiat? Accusantium cum facilis expedita. Iusto suscipit error nisi ipsum id maxime non nesciunt, soluta ea tenetur amet molestias officiis itaque fuga commodi eaque facere velit. Eius.</p>
+        <img src="imagens/css3.png" alt="css3" class="img-css">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem deleniti, consectetur ducimus sint sapiente soluta?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi recusandae labore. Laudantium, ratione corporis expedita magni rem culpa vitae explicabo delectus architecto commodi ex dignissimos quo repudiandae quis ab, soluta dolores consectetur nemo suscipit ea itaque odit. At quaerat minima facilis eveniet quae? Ut veritatis dignissimos sed sapiente odio. Nemo officiis accusantium fugiat? Accusantium cum facilis expedita. Iusto suscipit error nisi ipsum id maxime non nesciunt, soluta ea tenetur amet molestias officiis itaque fuga commodi eaque facere velit. Eius.</p>
+
+
+
+
+    </body>
+
+</html>

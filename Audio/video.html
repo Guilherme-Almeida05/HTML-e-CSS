@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio</title>
+
+    <style>
+        ::cue{
+            padding: 16px;
+            display: inline-block;
+            color: yellow;
+            font-size: 1.6em;
+            background-color: rgb(0 0 0 / .5);
+        }
+    </style>
+
+</head>
+
+    <body>
+
+        <video controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.ogv" type="video/ogg">
+            <source src="media/video.webm" type="video/webm">
+            <track src="media/track.pt.vtt" kind="captions" srclang="pt" label="Português" default> <!-- Assim iremos inserir o arquivo de legendas -->
+            <track src="media/track.en.vtt" kind="captions" srclang="en" label="English"> <!-- Assim iremos inserir o arquivo de legendas -->
+        </video>
+
+    </body>
+
+</html>

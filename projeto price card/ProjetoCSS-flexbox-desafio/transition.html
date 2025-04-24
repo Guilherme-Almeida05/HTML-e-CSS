@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Transition </title>
+
+    <style>
+        div{
+            background-color: orange;
+            width: 200px;
+            height: 150px;
+            margin: 100px auto;
+            transition-property: width, height, background-color;
+            transition-duration: .5s, 1s;
+            /* transition-timing-function: linear; LINAH COMENTADA PARA TESTE  */
+            transition-delay: .5s; /* Nessa função atraseremos a execução da animação */
+            transition-timing-function: cubic-bezier(.59, -0.3, .49, 1.36); /* Com 'Cubic-bezier, podemos dar efeito de movimento'*/
+            /* É possível escrever da seguinte forma:--> transition: widht .5s ease, height 1s ease .3s, background-color .5s ease */
+        }
+
+        /* 
+                        Em transition-timing-function:
+        Usando 'linear' a animacao tera a mesma valocidade em todo o processo
+        Usando 'Ease' a animacao começa acelerada e no final ela desacelera
+        Usando 'Ease-in' a animeção começa devagar e depois acelera 
+        */
+
+        div:hover{
+            width: 400px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+    <body>
+        <div></div>
+        
+    </body>
+
+</html>
